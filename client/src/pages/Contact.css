@@ -1,0 +1,277 @@
+.contact {
+  padding-top: 80px;
+}
+
+/* Contact Hero */
+.contact-hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  margin-bottom: 1rem;
+}
+
+.contact-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact Content Layout */
+.contact-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+/* Contact Form Section */
+.contact-form-section .card {
+  padding: 2.5rem;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-section .text-gold {
+  margin-bottom: 2rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  height: fit-content;
+}
+
+.contact-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info .text-gold {
+  margin-bottom: 2rem;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-info-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-icon {
+  font-size: 1.5rem;
+  color: #d4af37;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 50%;
+}
+
+.contact-info-content h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.contact-info-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Contact Person */
+.contact-person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.contact-person-avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact-person-info h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.contact-person-info .text-gold {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-person-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Packages Section */
+.package-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+}
+
+.package-header {
+  margin-bottom: 2rem;
+}
+
+.package-header h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+}
+
+.package-features {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.package-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+}
+
+.package-features li:last-child {
+  border-bottom: none;
+}
+
+.feature-icon {
+  color: #d4af37;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-info {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 3rem 0;
+  }
+  
+  .contact-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form-section .card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-info {
+    padding: 1.5rem;
+  }
+  
+  .package-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .package-price {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .contact-form-section .card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-info {
+    padding: 1rem;
+  }
+  
+  .contact-person {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .package-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .package-price {
+    font-size: 1.8rem;
+  }
+} 
