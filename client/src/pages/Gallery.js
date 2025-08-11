@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaSearch, FaTimes, FaHeart, FaCamera } from 'react-icons/fa';
 import './Gallery.css';
@@ -23,7 +23,7 @@ const Gallery = () => {
   ];
 
   // Sample gallery images (in a real app, these would come from the API)
-  const sampleImages = [
+  const sampleImages = useMemo(() => [
     {
       _id: '1',
       title: 'Romantic Engagement',
@@ -96,7 +96,7 @@ const Gallery = () => {
       category: 'Wedding Ceremony',
       featured: false
     }
-  ];
+  ], []);
 
   useEffect(() => {
     // Simulate API call
@@ -113,7 +113,7 @@ const Gallery = () => {
     } else {
       setFilteredImages(images.filter(img => img.category === selectedCategory));
     }
-  }, [selectedCategory, images, sampleImages]);
+  }, [selectedCategory, images]);
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
