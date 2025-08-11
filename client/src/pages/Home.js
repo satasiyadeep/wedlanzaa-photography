@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaCamera, FaHeart, FaStar, FaUsers, FaAward } from 'react-icons/fa';
+import { FaCamera, FaHeart, FaStar, FaUsers } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaSearch, FaTimes, FaHeart, FaCamera } from 'react-icons/fa';
-import axios from 'axios';
 import './Gallery.css';
 
 const Gallery = () => {
@@ -114,7 +113,7 @@ const Gallery = () => {
     } else {
       setFilteredImages(images.filter(img => img.category === selectedCategory));
     }
-  }, [selectedCategory, images]);
+  }, [selectedCategory, images, sampleImages]);
 
   const handleImageClick = (image) => {
     setSelectedImage(image);

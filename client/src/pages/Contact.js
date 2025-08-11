@@ -30,7 +30,7 @@ const Contact = () => {
     setMessage({ type: '', text: '' });
 
     try {
-      const response = await axios.post('/api/inquiries', formData);
+      await axios.post('/api/inquiries', formData);
       setMessage({
         type: 'success',
         text: 'Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.'
