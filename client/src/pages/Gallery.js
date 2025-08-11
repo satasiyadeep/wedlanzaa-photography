@@ -105,7 +105,7 @@ const Gallery = () => {
       setFilteredImages(sampleImages);
       setLoading(false);
     }, 1000);
-  }, []);
+  }, [sampleImages]);
 
   useEffect(() => {
     if (selectedCategory === 'All') {
